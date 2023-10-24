@@ -146,3 +146,19 @@ function copyOrder() {
         .then(() => alert('รายการอาหารของคุณถูก Copy แล้ว!'))
         .catch(err => console.error('Unable to copy order', err));
 }
+
+// Start Function Input Number Only
+function validateAndCleanInput() {
+    const roomnumber = document.getElementById('roomnumber');
+    let inputValue = roomnumber.value;
+  
+    // ใช้ Regular Expression ในการตรวจสอบค่าที่กรอกเข้ามา
+    const regex = /^[0-9]+$/;
+  
+    if (!regex.test(inputValue)) {
+      // ถ้าค่าไม่ใช่ตัวเลข 0-9 ให้ลบข้อมูลทิ้ง
+      inputValue = inputValue.replace(/[^0-9]/g, '');
+      roomnumber.value = inputValue;
+    }
+  }
+// End Function Input Number Only

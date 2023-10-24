@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="elio.jpg" type="image/jpg">
+    <link rel="apple-touch-icon" href="elio.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Food @Elio</title>
@@ -8,13 +10,13 @@
 
 </head>
 <body>
-    <h1>Food Menu Filter ร้านอายจ้า</h1>
+    <h1>Food Menu Filter ร้านอายเอง @Elio</h1>
 
 <div class="wrapper">
 
 <main>
     <div class="inputGroup">
-        <input type="text" id="roomnumber" required="" autocomplete="off">
+        <input type="text" id="roomnumber" oninput="validateAndCleanInput()" required="" autocomplete="off">
         <label for="name">เลขที่ห้อง</label>
     </div>
 
