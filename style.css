@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: start;
   gap: 5%;
+  margin-bottom: 150px;
   
      @media (max-width: 700px) {
       flex-direction: column;
@@ -244,4 +245,16 @@ li {
 .menuButton,.quantityButton :active {
   box-shadow: 4px 4px 12px #c5c5c5,
              -4px -4px 12px #ffffff;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
